@@ -320,17 +320,32 @@ a {
     margin-bottom: 5rem;
 }
 
-.btn {
+/*.btn {
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1.2rem;
+    
     color: #333;
-    z-index: 1;
+    
     margin-bottom: 4rem;
 }
 
 .btn:hover {
     color: #c59d5f;
+}*/
+
+.btn{
+    display: inline-block;
+    padding: 1rem 3rem;
+    background-color: #333;
+    border-radius: 1rem;
+    color: #f9f9f9;
+    z-index: 1;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    color: #c59d5f;
+    font-weight: bold;
 }
 
 .third-grid {
@@ -511,11 +526,20 @@ a {
     margin-bottom: 5rem;
 }
 
+
 input{
     border: transparent;
     border-bottom: 2px solid #ccc;
     transition: all 0.8s;
     width: 70%;
+}
+
+.three-columns-grid .form-group:last-child {
+   margin-right: 5rem;
+}
+
+.book-card .btn-book {
+    margin-left: 45%;
 }
 
 input:focus{
@@ -532,12 +556,7 @@ select:focus{
     outline: none;
 }
 
-.btn-book{
-    display: flex;
-    justify-content: center;
-    transform: translateY(5rem);
-    font-size: 1.4rem;
-}
+
 
 /*  Footer  */
 
@@ -555,7 +574,7 @@ footer{
     text-align: center;
 }
 
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .nav-list {
         width: 80%;
     }
@@ -581,6 +600,10 @@ footer{
     .slick-prev::before,
     .slick-next::before {
         display: none;
+    }
+
+    footer {
+        margin-top: 40rem;
     }
 }
 
@@ -621,6 +644,10 @@ footer{
 
     .three-columns-grid {
         grid-gap: 0;
+    }
+
+    .book-card .btn-book {
+        margin-left: 36%;
     }
 
     .footer {
